@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta de Instagram</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Cargamos Lottie desde CDN para la animación de celebración basada en JSON -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sorteo de Instagram</h1>
+        
+        <div class="input-section">
+            <label for="accounts-input">Ingresa las cuentas (una por línea):</label>
+            <!-- Aquí ya quedan guardados por defecto todos tus participantes -->
+            <textarea id="accounts-input" placeholder="@usuario1&#10;@usuario2">
+01969migue
+adidafne
+amaliahernandez11
+ana.l.farias.31
+anabetzanearrioja
+andrea23pink
+andreina7lugo
+ayaritzacarolinarod
+beatriz9963
+belpaz2107
+burgosh_dani
+carmendefigueroa
+carol.940000
+char.lottemoya69
+claudismary
+claujimenez20
+cristinaalejandraguerrarodrigu
+diamaryray
+dilcia2221
+doraligiacardona
+dorco21
+elsymar58
+erdacavic
+euddy_1991
+evasalcedo48
+fabi_muji12
+fedejesusmartinezderodriguez
+franya_dhg
+ginnaviera
+glennys29
+grisheth2013
+isbel1803
+itss.vickyy_t
+ivettemarquina
+jeannettemarin1
+jeremias_syl
+johangelayanoni
+josefinatorres772
+josmyduranvalero
+kalepm08
+la_flak_0229
+ladinorosa12
+lanegraemilia01
+lcarolgutierrez
+letiibaez_
+lilagonzalezmendez
+lindeliaarboleda
+lizkelsey_234
+ludymachadosanz
+m.eugenia26
+mariaalejandra.guanipa.52
+mariale1456
+marisoltrujillo258
+marlenneescobar
+medrano_carolina
+minguetermerida
+mujerefectosecundario
+nana.ventu
+noervisjosejose
+noriega67
+orianabetancourt9
+ricciagisela
+rolovi13
+rosaleida54
+rosmyalvarez70
+sachycolit
+soy_lelena
+thais.j.morales
+trillusa1
+virginia29.03
+yeiskar
+yelismarmoyano
+yelitzajes
+yennicvr
+yilmariela
+yoleidy1407
+yolandaotero1967
+ymec01
+yoselynisamarhidalgo
+yunildemorales2011
+zambrano280879</textarea>
+            <button id="btn-spin">¡Girar Ruleta!</button>
+        </div>
+
+        <div class="wheel-container">
+            <div class="pointer"></div>
+            <div id="wheel" class="wheel">
+                <!-- Los sectores se calculan dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Ganador -->
+    <div id="winner-modal" class="modal hidden">
+        <div class="modal-content">
+            <div id="lottie-celebration"></div>
+            <h2>¡Tenemos un Ganador!</h2>
+            <p id="winner-name"></p>
+            <button id="btn-close">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
